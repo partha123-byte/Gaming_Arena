@@ -1,0 +1,98 @@
+#game {
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+#character {
+    width: 20px;
+    height: 50px;
+    
+    position: relative;
+    top: 150px;          /* game height - character height (200 - 50) */
+}
+
+#character img{
+    width: 140px;
+    height: 200px;
+    left:-44px;
+    position: absolute;
+    top: -90px;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 100px;
+    }
+    70% {
+        top: 100px;
+    }
+    100% {
+        top: 150px;
+    }
+}
+
+.animate {
+    animation: jump 800ms linear;
+}
+
+#block {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;
+    top: 130px;             /*game height - character height - block height (200 - 50 - 20) */
+    left: 480px;            /*game width - block width (500 - 20) */
+    animation: block 3s infinite linear;  /* 5s - block speed*/
+}
+
+@keyframes block {
+    0% {
+        left: 500px
+    }
+    100% {
+        left: -10px
+    }
+}
+
+body{
+    
+    background: url(favpng_velociraptor-television-desktop-wallpaper-film.png); 
+    background-size:1290px;
+    background-position-x: right;
+    
+    
+    background-repeat: no-repeat;
+    background-color:#3f9f31;
+}
+
+#game{
+    
+    box-shadow: 10px 10px 30px greenyellow;
+    border:10px solid greenyellow;
+    border-radius: 10px ;
+    background: url(myvideo.mp4);
+    
+}
+.score{
+    font-family: 'Reggae One', cursive;
+    color: 	#d1e64d;
+    font-size: 30px;
+}
+#score{
+    font-family: 'Reggae One', cursive;
+    color: 	#d1e64d;
+    font-size: 30px;
+}
+
+#myVideo{
+    position:absolute;
+    width:500px;
+    left:33.7%;
+    top:114px;
+    opacity: 60%;
+}
